@@ -21,7 +21,7 @@ class Main():
             con = Connection()
         #__________________________________________________________________________
         # Change the name of the database and collections to your liking
-        db = con.feature_extraction_test                        # #####REPLACE#####
+        db = con.feature_extraction_database                    # #####REPLACE#####
         song_features = db.song_features_collection             # #####REPLACE#####
         distance_features = db.distance_features_collection     # #####REPLACE#####
         #__________________________________________________________________________
