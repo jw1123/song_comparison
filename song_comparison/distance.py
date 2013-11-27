@@ -42,7 +42,7 @@ class Distance:
                     # and calls the distance calculation function
                     distance_dict, weight = self.browse_features(song1, song2, coeff)
                     # Only consider pairs that lie beneath a certain threshold
-                    if weight < 10.0:
+                    if weight < 0.01:
                         # Check if the collection already exists, if not,
                         # insert the dictionary
                         if type(self.di.find_one({"source": song1['song_id']})) != dict or\
