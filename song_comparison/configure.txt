@@ -1,0 +1,13 @@
+[MelFrequencyCepstrum]
+default=0
+
+[Chromagram]
+default=0
+
+[LinearPower]
+default=0
+
+[BPM]
+default=0
+
+
