@@ -23,7 +23,9 @@ class Graphdist:
         # Iterate through all distances and create
         # edges between the songs of the graph
         for d in self.di.find():
-            G.add_edge(d['source'], d['target'], weight=d['weight'])
+            # Multiply the weight by 10000 because the values
+            # are rounded up in Gephi
+            G.add_edge(d['source'], d['target'], weight=10000*d['weight'])
         # Create the GraphML file
         nx.write_graphml(G, path.dirname(path.realpath("graph.py"))
                                         + '/song_comparison.graphml')
